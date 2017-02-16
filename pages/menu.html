@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/jquery.js"></script>
-    <script src="../js/menuScript.js"></script>
+    <link rel="stylesheet" href="../css/menuStyle.css">
+
+    <script src="jquery-3.1.1.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script src="menuScript.js"></script>
+
     <title>Welcome to The Flying Dutchman</title>
 </head>
 <body>
@@ -25,6 +29,73 @@
 
 <!-- Here begins the body section. -->
 <div id="main">
+    <!--
+
+    <div class="sectionDrinks">
+        <div class="block">
+            <div id="drinks">
+                <H3 id="OrderName"></H3>
+                <p id="OrderBild"> </p>
+                <p id="Orderingredients"> Contains: </p>
+                <p id="Orderstyrka"> Strength:  </p>
+                <p id="OrderVolym">  Volume: </p>
+            </div>
+        </div>
+        <div class="block">
+            <ul>
+                <li>
+                    <p>Name</p>
+                </li>
+                <li>
+                    <p>Price</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="block">
+            <ul>
+                <li>
+                    <p>Name</p>
+                </li>
+                <li>
+                    <p>Price</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div id="orderlistBox">
+            <div id="orderlistBoxText"> <h3>Orderlist</h3></div>
+
+        </div>
+    </div>
+    -->
+
+    <script>
+        docLoaded(indexPageLoaded);
+    </script>
+
+    <div id="parentDiv">
+        <div id="childDiv"></div>
+    </div>
+
+
+    <br class="breaking">
+
+    <div>
+        <div id="orderlistBox">
+            <div id="orderlistBoxText"> <h3>Orderlist</h3></div>
+
+        </div>
+    </div>
+
+    <br class="breaking">
+
+    <div id="buttons">
+        <button type="button" id="regretOrderButton"><a href="menu.html">Undo order</a></button>
+        <button type="button" id="buttonPurchase"><a href="pages/menu.html">Purchase</a></button>
+    </div>
 
 </div>
 
@@ -32,6 +103,7 @@
 <footer>
     <p>Open from 6pm to 2am</p>
 </footer>
-
 </body>
 </html>
+
+
