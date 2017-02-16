@@ -93,3 +93,26 @@ a:visited {
 li {
     list-style: none;
 }
+
+/* ----------------------------Show the menu from the database functions------------------------------------------*/
+
+/* Tar float så att man får den dynamiska listan efter varandra och sätter en border runt.*/
+#parentDiv {
+    width: 80%;
+}
+#childDiv{
+    float:left;
+}
+
+/* Den dynamiska div attributer. */
+.divdrag {
+    border: 1px solid black;
+    margin:50px;
+    width: 250px;
+    float:left;
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: cursive;
+    font-size: 18px;
+    display:inline-block;
+}
