@@ -1,32 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/logInStyle.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="../js/jquery.js"></script>
-    <script src="../js/logInScript.js"></script>
+    <script src="../js/menuScript.js"></script>
     <title>Welcome to The Flying Dutchman</title>
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
 </head>
 <body>
 
 <!-- Here begins the header section. -->
 <div id="nav-header">
-    <!-- <h1 class="header-text">The Flying Dutchman</h1> -->
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a class="active" href="logIn.html">Log In</a></li>
-        </ul>
-    </nav>
+    <div class="square2">
+        <h1 class="header-text">THE FLYING DUTCHMAN</h1>
+    </div>
+
 </div>
 
 <!-- Here begins the body section. -->
-<div id="main">
-    <h2>Login Form</h2>
+<div id="nav-main">
+    <nav>
+        <ul>
+            <li><a href="../index.html">START</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a class="active" href="logIn.html">LOG IN</a></li>
+        </ul>
+    </nav>
 
     <form action="action_page.php">
         <div class="imgcontainer">
@@ -34,28 +38,26 @@
         </div>
 
         <div class="container">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label><b>USERNAME</b></label>
+            <input type="text" placeholder="ENTER USERNAME" name="uname" required>
 
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <button type="submit">Login</button>
-            <input type="checkbox" checked="checked"> Remember me
+            <label><b>PASSWORD</b></label>
+            <input type="password" placeholder="ENTER PASSWORD" name="psw" required>
         </div>
 
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="forgotPassword.html" style=color:blue; > password?</a></span>
+        <div class="container2">
+            <button type="submit">LOG IN</button>
+            <button type="button" class="cancelbtn">CANCEL</button>
         </div>
+
+
+            <span class="psw"><a href="forgotPassword.html" style="color: white"> FORGOT PASSWORD? </a></span>
+
     </form>
-
 </div>
 
 <!-- Here begins the footer section.-->
-<footer>
-    <p>Open from 6pm to 2am</p>
-</footer>
+
 
 </body>
 </html>
