@@ -97,3 +97,130 @@ li {
     right:2%;
     bottom:5%;
 }
+/*-------------------------------------------------------------------------------------------------------------- */
+
+
+/*---------------------------The Background style----------------------------------------------------------------- */
+#AdaptToMenuPage{
+    width: 70%;
+}
+/*Background in main*/
+#main {
+
+    padding:10px;
+    background-color: lightgray;
+    min-height:100%;
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: lighter;
+}
+
+
+#nav-header {
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: lighter;
+    padding:0px;
+    background-color: #111;
+    background-image: url("https://www.scandichotels.se/imagevault/publishedmedia/suw58cmdyrxfvvjep2a5/Scandic-Malmen-Interior-bar-Lilla-hotellbaren-over.jpg");
+
+
+}
+
+.header-text{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    position: static;
+}
+
+/*Space between menu and body*/
+#nav-main h1 {
+    font-size: 0%;
+
+}
+/*Menu buttons style*/
+
+#nav-main nav ul {
+    font-size: 30px;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: lighter;
+
+}
+/*Place of the menu*/
+#nav-main nav li {
+    float: left;
+}
+
+/* Menu background colour*/
+#nav-main nav li a {
+    display: block;
+    color: #111111;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 5px 50px;
+
+
+}
+
+
+/*When hovering over the menu*/
+#nav-main nav li a:hover:not(.active) {
+    background-color: #111;
+    color: whitesmoke;
+
+}
+
+
+/*When hovering over the active link*/
+#nav-main nav li a:hover {
+    background-color: #111;
+    color: whitesmoke;
+
+}
+
+#nav-main nav li a.active {
+    background-color: #111;
+    color: whitesmoke;
+
+}
+
+
+
+
+/*Welcome box on startpage*/
+.square{
+    text-align:center;
+    margin-top:150px;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    font-weight: lighter;
+    font-size: 180px;
+    display: inline-block;
+    width: 100%;
+    height: 230px;
+    vertical-align: bottom;
+
+
+}
+/*Titlebox on all pages*/
+.square2{
+    text-align:center;
+    margin-top:0px;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+    font-weight: lighter;
+    font-size:60px;
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    vertical-align: middle;
+    line-height: 50px;
+
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------- */
