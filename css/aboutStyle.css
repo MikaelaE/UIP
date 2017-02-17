@@ -2,38 +2,48 @@ hr {
     border: none;
     height: 1px;
     /* Set the hr color */
-    color: #333; /* old IE */
     background-color: #333; /* Modern Browsers */
 }
 
-img {
-    padding: 1em;
+.box {
+    margin-top:40px;
+    margin-left:20px;
+    margin-right:20px;
 }
 
-.breaking {
-    clear: both;
-}
-
-
-#main h1 {
-    text-align: center;
-    font-size: 36px;
-    font-family: Calibri;
-}
-
-#firstSection {
-    margin: 0 0 10px 10px;
-    display:block;
-}
-
-#secondSection {
-    background-color: azure;
-    margin-bottom: 50px;
-}
-#img1 {
+.aboutimage {
+    height: 300px;
+    width: 450px;
     float: left;
+    margin-right: 20px;
+
 }
 
-#img2 {
-    float:right;
+.aboutimage2 {
+    height: 300px;
+    width: 450px;
+    float: right;
+    margin-right: 20px;
+
+}
+
+.abouttext {
+
+    clear: right;
+    color:#ffffff;
+    font-family: 'Pontano Sans', sans-serif;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.abouttext2 {
+
+    clear: left;
+    color:#ffffff;
+    font-family: 'Pontano Sans', sans-serif;
+    margin-right: 480px;
+    font-size: 20px;
+    text-align: justify;
 }
