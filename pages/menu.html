@@ -10,115 +10,75 @@
     <script src="menuScript.js"></script>
 
     <title>Welcome to The Flying Dutchman</title>
-    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
 </head>
 <body>
+<div id="AdaptToMenuPage">
+    <!-- Here begins the header section. -->
+    <div id="nav-header">
+        <div class="square2">
+            <h1 class="header-text">THE FLYING DUTCHMAN</h1>
+        </div>
 
-<!-- Here begins the header section. -->
-<div id="nav-header">
-    <div class="square2">
-<h1 class="header-text">THE FLYING DUTCHMAN</h1>
+    </div>
+
+    <!-- Here begins the body section. -->
+    <div id="nav-main">
+        <nav>
+            <ul>
+                <li><a href="../index.html">START</a></li>
+                <li><a class="active" href="menu.html">MENU</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="events.html">EVENTS</a></li>
+                <li><a href="logIn.html">LOG IN</a></li>
+            </ul>
+        </nav>
+
     </div>
 
 </div>
 
 <!-- Here begins the body section. -->
-<div id="nav-main">
-    <nav>
-        <ul>
-            <li><a href="../index.html">START</a></li>
-            <li><a class="active" href="menu.html">MENU</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="events.html">EVENTS</a></li>
-            <li><a href="logIn.html">LOG IN</a></li>
-        </ul>
-    </nav>
-
-<<<<<<< HEAD
-=======
-<!-- Here begins the body section. -->
 <div id="main">
-    <!--
 
-    <div class="sectionDrinks">
-        <div class="block">
-            <div id="drinks">
-                <H3 id="OrderName"></H3>
-                <p id="OrderBild"> </p>
-                <p id="Orderingredients"> Contains: </p>
-                <p id="Orderstyrka"> Strength:  </p>
-                <p id="OrderVolym">  Volume: </p>
-            </div>
-        </div>
-        <div class="block">
-            <ul>
-                <li>
-                    <p>Name</p>
-                </li>
-                <li>
-                    <p>Price</p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="block">
-            <ul>
-                <li>
-                    <p>Name</p>
-                </li>
-                <li>
-                    <p>Price</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <div>
-        <div id="orderlistBox">
-            <div id="orderlistBoxText"> <h3>Orderlist</h3></div>
-
-        </div>
-    </div>
-    -->
 
     <script>
         docLoaded(indexPageLoaded);
     </script>
 
+    <!-- The divs are to print out all the elements in the inventory database(the drinks) -->
     <div id="parentDiv">
+        <h3>Please drag your drink to the orderlist box. </h3>
         <div id="childDiv"></div>
     </div>
 
-
-    <br class="breaking">
-
+    <!-- The section for the droppable element-->
     <div>
         <div id="orderlistBox">
-            <div id="orderlistBoxText"> <h3>Orderlist</h3></div>
+            <div id="orderlistBoxText">
+                <h2>Orderlist</h2>
+                <h3>Drop your drink here.</h3>
+            </div>
 
         </div>
     </div>
 
+    <!-- Clear the floats-->
     <br class="breaking">
 
     <div id="buttons">
         <button type="button" id="regretOrderButton"><a href="menu.html">Undo order</a></button>
-        <button type="button" id="buttonPurchase"><a href="pages/menu.html">Purchase</a></button>
+        <button type="button" id="buttonPurchase"><a href="payment.html">Purchase</a></button>
     </div>
->>>>>>> karljohansson86/master
 
 </div>
 
 <!-- Here begins the footer section.-->
-<<<<<<< HEAD
-
-
-=======
 <footer>
     <p>Open from 6pm to 2am</p>
 </footer>
->>>>>>> karljohansson86/master
 </body>
+
+
 </html>
 
 
