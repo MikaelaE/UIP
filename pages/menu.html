@@ -12,7 +12,6 @@
     <title>Welcome to The Flying Dutchman</title>
 </head>
 <body>
-<div id="AdaptToMenuPage">
     <!-- Here begins the header section. -->
     <div id="nav-header">
         <div class="square2">
@@ -35,8 +34,6 @@
 
     </div>
 
-</div>
-
 <!-- Here begins the body section. -->
 <div id="main">
 
@@ -47,7 +44,6 @@
 
     <!-- The divs are to print out all the elements in the inventory database(the drinks) -->
     <div id="parentDiv">
-        <h3>Please drag your drink to the orderlist box. </h3>
         <div id="childDiv"></div>
     </div>
 
@@ -56,7 +52,11 @@
         <div id="orderlistBox">
             <div id="orderlistBoxText">
                 <h2>Orderlist</h2>
-                <h3>Drop your drink here.</h3>
+            </div>
+
+            <div id="order">
+                <button type="button" id="buttonUndo"><a href="menu.html">UNDO</a></button>
+                <button type="button" id="buttonOrder"><a href="payment.html">ORDER</a></button>
             </div>
 
         </div>
@@ -65,11 +65,12 @@
     <!-- Clear the floats-->
     <br class="breaking">
 
-    <div id="buttons">
-        <button type="button" id="regretOrderButton"><a href="menu.html">Undo order</a></button>
-        <button type="button" id="buttonPurchase"><a href="payment.html">Purchase</a></button>
+    <!--
+    <div id="buttonsSection">
+        <button type="button" class="button"><a href="menu.html">Undo order</a></button>
+        <button type="button" class="button"><a href="payment.html">Purchase</a></button>
     </div>
-
+    -->
 </div>
 
 <!-- Here begins the footer section.-->
