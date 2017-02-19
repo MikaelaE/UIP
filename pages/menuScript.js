@@ -66,7 +66,7 @@ function printOutTheMenu(beers)  {
         {
             /* Get the data from the database and create element from them.*/
             var nodeName = document.createTextNode(beers[i].namn);
-            var pub_price = document.createTextNode("Price: " + beers[i].pub_price);
+            var pub_price = document.createTextNode("Price: $" + beers[i].pub_price);
 
             /* Set the data to the paragraph node. Using the break point to get the data on a new row.*/
             paragraph.appendChild(nodeName);
@@ -92,15 +92,50 @@ function printOutTheMenu(beers)  {
         $("#orderlistBox").droppable(
             {
                 drop:function (ev,ui) {
+                    /* First section: Create a clone of the item that has been dropped.*/
                     ev.preventDefault();
                     var droppedItem = $(ui.draggable).clone();
                     $(this).append(droppedItem);
 
+
+                    /* Second section: Save the data so we can print out the total price.*/
+                    var context1 = $(droppedItem).find("p:eq(0)").text();
+
+                    /* Test with different methods and print the result on the console log.
+                     console.log("Test with .text() : " + context1);
+                     var context2 = $(droppedItem).find('p:eq(0)').html();
+                     console.log("Test with .html() : " + context2);
+                     */
+                    /* Calls the function with the price. Need to split the string because it contents
+                     all the information from the div. So the .split function divide the string after the ":" and
+                     send the string to the right of the ":".
+                     */
+                    addProduct(parseFloat(context1.split('$')[1]));
                 }
             }
         );
 
     }
+}
+
+/*
+ Initializes a variable to hold the total price of the order.
+ It must be global so that the total balance is updated with each new price.
+ */
+var totalCost = 0;
+var totalDrinks = 0;
+
+/* Function that counting the total price and print out the total number to the page.  */
+function addProduct(price){
+    totalCost += price;
+    totalDrinks += 1;
+    $('#orderlistBox .totalCost').html('Total Sum: $'+totalCost);
+    $('#orderlistBox .totalDrinks').html('Amount of drinks: '+totalDrinks);
+
+    /* Uses to test the function.
+     console.log(price);
+     console.log(totalCost);
+     */
 }
 
 /* ---------------------------------------------------------------------------------------------------------------*/
