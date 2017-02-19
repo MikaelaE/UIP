@@ -61,8 +61,10 @@ function printOutTheMenu(beers)  {
         var br = document.createElement("br");
         var br2 = document.createElement("br");
 
-        /* Add only the element wiht name.(The current database has a few element without names)*/
-        if(beers[i].namn != "")
+        /* Add only the elements with name (The current database has a few element without names)
+        * and elements that have more than 0 in the inventory.
+        * */
+        if(beers[i].namn != "" && beers[i].count > 0)
         {
             /* Get the data from the database and create element from them.*/
             var nodeName = document.createTextNode(beers[i].namn);
