@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link rel="stylesheet" href="../css/logInStyle.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/logInStyle.css">
+
     <script src="../js/jquery.js"></script>
-    <script src="../js/menuScript.js"></script>
+    <script src="../js/logInScript.js"></script>
     <title>Welcome to The Flying Dutchman</title>
     <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
 </head>
 <body>
+
+
+<script>
+    docLoaded(indexPageLoaded);
+</script>
+
 
 <!-- Here begins the header section. -->
 <div id="nav-header">
@@ -32,32 +39,22 @@
             <li><a class="active" href="logIn.html">LOG IN</a></li>
         </ul>
     </nav>
-
-    <form action="action_page.php">
-        <div class="imgcontainer">
-            <!--   <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
-        </div>
-
-        <div class="container">
-            <label><b>USERNAME</b></label>
-            <input type="text" placeholder="ENTER USERNAME" name="uname" required>
-
-            <label><b>PASSWORD</b></label>
-            <input type="password" placeholder="ENTER PASSWORD" name="psw" required>
-        </div>
-
-        <div class="container2">
-            <button type="submit">LOG IN</button>
-            <button type="button" class="cancelbtn">CANCEL</button>
-        </div>
-
-
-        <span class="psw"><a href="forgotPassword.html" style="color: white"> FORGOT PASSWORD? </a></span>
-
-    </form>
 </div>
 
-<!-- Here begins the footer section.-->
+<div class="container">
+    <div class="header">
+        <!--Maybe some texts here? -->
+    </div>
+
+    <form name="login" onsubmit=" return validateForm();" method="post">
+        <ul>
+            <li>Username: <input class="username" type="text" name="username"></li>
+            <li>Password: <input class="password" type="password" name="password"></li>
+        </ul>
+
+        <input type="button" class="submit" value="Log In" name="submit" onclick="validate()">
+    </form>
+</div>
 
 
 </body>

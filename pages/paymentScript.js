@@ -20,7 +20,7 @@ function printOutTheTotalCost() {
     var totalCost = localStorage.GlobalTotalCost;
     $('#orderPaymentPage').html('Total Sum: $'+totalCost);
 
-    /* Need to use JSON.parse because localStorage only handling string and not arrays.*/
+    /* Need to use JSON.parse because localStorage only handling strings and not arrays.*/
     var storedNames = JSON.parse(localStorage.getItem("drinksArray"));
 
     /* Loop the storedNames array and add the name to the page.*/
