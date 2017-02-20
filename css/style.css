@@ -167,6 +167,7 @@ footer {
     background-color: floralwhite;
     border: none;
     color: #000;
+	cursor:pointer;
     padding: 10px 80px;
     text-align: center;
     text-decoration: none;
@@ -177,6 +178,14 @@ footer {
     -webkit-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+	-webkit-transition: background-color 1.5s, color 1.5s;
+	-moz-transition: background-color 1.5s, color 1.5s;
+	transition: background-color 1.5s;
+}
+
+#buttonOrder:hover{
+	background-color: black;
+	color: floralwhite;
 }
 
 
