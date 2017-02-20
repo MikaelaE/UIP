@@ -103,11 +103,12 @@ function printOutTheMenu(beers)  {
                     /* Second section: Save the data so we can print out the total price.*/
                     var context1 = $(droppedItem).find("p:eq(0)").text();
 
-                    /* Test with different methods and print the result on the console log.
-                     console.log("Test with .text() : " + context1);
-                     var context2 = $(droppedItem).find('p:eq(0)').html();
-                     console.log("Test with .html() : " + context2);
-                     */
+                    console.log("Test with .text() : " + context1);
+                    var context2 = $(droppedItem).find('p:eq(0)').html();
+                    console.log("Test with .html() : " + context2);
+                    var name = context1.split('Price')[0];
+                    console.log("Name:" + name);
+                    nameDrinksArray(name);
                     /* Calls the function with the price. Need to split the string because it contents
                      all the information from the div. So the .split function divide the string after the ":" and
                      send the string to the right of the ":".
@@ -120,6 +121,14 @@ function printOutTheMenu(beers)  {
     }
 }
 
+var nameArray = [];
+/* Function that saves all the drinks names that is ordered.*/
+function nameDrinksArray(name) {
+    /*Pus is adding a element to the array. */
+    nameArray.push(name);
+    /* Need to use JSON.stringify because localStorage only handling string and not arrays.*/
+    localStorage.setItem("drinksArray", JSON.stringify(nameArray));}
+
 /*
  Initializes a variable to hold the total price of the order.
  It must be global so that the total balance is updated with each new price.
@@ -131,14 +140,18 @@ var totalDrinks = 0;
 function addProduct(price){
     totalCost += price;
     totalDrinks += 1;
+    /*This is for the menu page. */
     $('#orderlistBox .totalCost').html('Total Sum: $'+totalCost);
     $('#orderlistBox .totalDrinks').html('Amount of drinks: '+totalDrinks);
 
-    /* Uses to test the function.
-     console.log(price);
-     console.log(totalCost);
-     */
+    storeData(totalCost);
 }
 
-/* ---------------------------------------------------------------------------------------------------------------*/
+/* -------------------Local storage---------------------------------------------------------------------------------*/
+/* The different between local.storage and session.storage is that the local.storage saves longer than session.
+If you refresh the page you lost the data on a session.storage.
+ */
 
+function storeData(totalCost) {
+    localStorage.setItem("GlobalTotalCost", totalCost);
+}
