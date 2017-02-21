@@ -1,0 +1,140 @@
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+
+.sectionDrinks{
+    margin-left: 50px;
+}
+
+#drinks {
+    width: 20px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align: center;
+}
+
+#orderlistBox{
+    width:300px;
+    overflow: auto;
+    height: 300px;
+    background-color: whitesmoke;
+    float:right;
+    margin-right: 50px;
+    clear: left;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+/*Orderlistbox text style*/
+#orderlistBoxText {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Pontano Sans', sans-serif;
+    color: #111111;
+
+}
+/*
+#buttons {
+    margin-top: 50px;
+    text-align:center;
+}
+/*Undo button style*/
+#regretOrderButton {
+    background-color: #111111; /* Green */
+    font-family: 'Pontano Sans', sans-serif;
+    border: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    padding: 16px 33px;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    margin-top: 20px;
+    margin-left: 45px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+#buttonPurchase {
+    background-color: whitesmoke; /* Green */
+    font-family: 'Pontano Sans', sans-serif;
+    border: none;
+    color: #111111;
+    border: 1px solid whitesmoke;
+    padding: 15px 33px;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* unvisited link */
+a:link {
+    color: #111;
+    text-decoration: none;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+/* visited link */
+a:visited {
+    color: whitesmoke;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+/*Nytt */
+.block {
+    float:left;
+    width: 150px;
+    background-color: lightgreen;
+    padding: 10px;
+    margin:10px;
+}
+
+li {
+    list-style: none;
+}
+
+/* ----------------------------Show the menu from the database functions------------------------------------------*/
+
+/* Tar float så att man får den dynamiska listan efter varandra och sätter en border runt.*/
+#parentDiv {
+    width: 80%;
+}
+#childDiv{
+    float:left;
+
+}
+
+/* The Drinks*/
+.divdrag {
+    border: 1px solid black;
+    font-family: 'Pontano Sans', sans-serif;
+    color: #111111;
+    margin:20px;
+    width: 300px;
+    height: 100px;
+    float:left;
+    text-align: center;
+    background-color: whitesmoke;
+    font-size: 20px;
+    display:inline-block;
+    line-height: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

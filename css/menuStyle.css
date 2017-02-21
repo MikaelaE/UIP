@@ -8,48 +8,47 @@ html,body
     overflow-x: hidden;
 }
 
+/*-------------------------- Buttons--------------------------------------*/
 
-
-.sectionDrinks{
-    margin-left: 50px;
-}
-
-#drinks {
-    width: 20px;
-    height: 250px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
+#buttonUndo {
+    background-color: floralwhite;
+    border: none;
+    color: #000;
+    padding: 10px 40px;
     text-align: center;
-}
-
-#orderlistBox{
-    width:300px;
-    overflow: auto;
-    height: 300px;
-    background-color: whitesmoke;
-    float:right;
-    margin-right: 50px;
-    clear: left;
-    text-align: justify;
-    margin-top: 40px;
-}
-
-/*Orderlistbox text style*/
-#orderlistBoxText {
-    text-align: center;
+    text-decoration: none;
     font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline;
     font-family: 'Pontano Sans', sans-serif;
-    color: #111111;
+    font-weight: lighter;
+    -webkit-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
 
+    position:fixed;
+    top:90%;
+    margin-top: 10px;
 }
-/*
-#buttons {
-    margin-top: 50px;
-    text-align:center;
+
+#buttonOrder{
+    background-color: floralwhite;
+    border: none;
+    color: #000;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: lighter;
+    -webkit-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+
+    position:fixed;
+    right:8%;
+    top:90%;
+    margin-top: 10px;
 }
-/*Undo button style*/
+
 #regretOrderButton {
     background-color: #111111; /* Green */
     font-family: 'Pontano Sans', sans-serif;
@@ -83,6 +82,9 @@ html,body
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
+/*--------------------------------------------------------------------*/
+
+/* ------------- LINKS -----------*/
 /* unvisited link */
 a:link {
     color: #111;
@@ -109,16 +111,16 @@ li {
     list-style: none;
 }
 
+
+
+
+
+
+/*----------------The Menu from the database------------------------------- */
+
 /* ----------------------------Show the menu from the database functions------------------------------------------*/
 
-/* Tar float så att man får den dynamiska listan efter varandra och sätter en border runt.*/
-#parentDiv {
-    width: 80%;
-}
-#childDiv{
-    float:left;
 
-}
 
 /* The Drinks*/
 .divdrag {
@@ -138,3 +140,114 @@ li {
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
+/* Tar float så att man får den dynamiska listan efter varandra och sätter en border runt.*/
+#parentDiv {
+    width: 80%;
+}
+#childDiv{
+    float:left;
+
+}
+
+/*
+#parentDiv {
+    width: 60%;
+}*/
+
+.dynamicallyDivClass {
+    border: 1px solid black;
+    margin:10px;
+    width: 250px;
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: cursive;
+    font-size: 18px;
+    /* Inline-block so dynamically divs are coming after each other. */
+    display:inline-block;
+}
+
+/*--------------------------------------------------------------------*/
+
+/*----------------The Orderbox---------------------------------------------- */
+/*#orderlistBox{
+    position:fixed;
+    right:8%;
+    top:40%;
+    width:360px;*/
+    /*Make so it can scroll.*/
+    /*
+    overflow: auto;
+    height: 50%;
+    background-color: aliceblue;
+}*/
+
+.sectionDrinks{
+    margin-left: 50px;
+}
+
+#drinks {
+    width: 20px;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    text-align: center;
+}
+
+
+#orderlistBox{
+    width:300px;
+    overflow: auto;
+    height: 300px;
+    background-color: whitesmoke;
+    float:right;
+    margin-right: 50px;
+    clear: left;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+/*
+#orderlistBoxText h2{
+    text-align:center;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: cursive;
+    text-decoration: underline;
+    padding-top: 0px;
+}*/
+/*Orderlistbox text style*/
+#orderlistBoxText {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Pontano Sans', sans-serif;
+    color: #111111;
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------- */
+
+/*----------------The rest of the page--------------------------------------------------------------------------- */
+#order {
+    text-align: center;
+    display: inline-block;
+}
+
+.totalCost{
+    margin:0;
+    text-align:right;
+    padding-right:20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.totalDrinks{
+    margin:0;
+    text-align:right;
+    padding-right:20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*-------------------------------------------------------------------------------------------------------------- */
