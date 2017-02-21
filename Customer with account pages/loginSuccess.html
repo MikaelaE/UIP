@@ -44,9 +44,39 @@
 </div>
 
 <div id="startbox">
-    <h1>Welcome</h1>
 </div>
 
+<div id="order">
+    <button type="button" id="buttonOrder"><a href="pages/menu.html">ORDER</a></button>
+</div>
+
+<div class="center">
+<button onclick="document.getElementById('id01').style.display='block'" style="text-align:center">Account information</button>
+</div>
+
+<div id="id01" class="modal">
+
+    <form class="modal-content animate">
+
+        <div class="container">
+            <div id="informationSection">
+                <h2>Your account information:</h2>
+                <div id="informationSection2"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Close</button>
+        </div>
+    </form>
+</div>
+
+<!--
+<div id="informationSection">
+   <h2>Your account information:</h2>
+    <div id="informationSection2"></div>
+</div>
+-->
 
 </body>
 </html>
