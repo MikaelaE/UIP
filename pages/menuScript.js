@@ -114,6 +114,18 @@ function printOutTheMenu(beers)  {
                      send the string to the right of the ":".
                      */
                     addProduct(parseFloat(context1.split('$')[1]));
+                },
+                /* When the drag element is activate the droppable zone changes. Code find at;
+                 * http://www.tutorialspark.com/jqueryUI/jQuery_UI_Droppable_Interaction.php
+                  * */
+                activate: function() {
+                    $('#orderlistBox').css({
+                        border: "5px dashed white",
+                        backgroundColor: "Green"
+                    });
+                },
+                deactivate: function() {
+                    $('#orderlistBox').css("border", "").css("background-color", "");
                 }
             }
         );

@@ -1,9 +1,8 @@
 /* Only for this file */
-form {
 
-}
 
 /*Log in boxes size*/
+/*
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 10px;
@@ -14,8 +13,9 @@ input[type=text], input[type=password] {
     font-size: 20px;
 
 }
-
+*/
 /*Login button*/
+/*
 button {
     background-color: #111;
     color: whitesmoke;
@@ -28,6 +28,7 @@ button {
 
 }
 /*Cancel button*/
+/*
 .cancelbtn {
     background-color: #111;
     color: whitesmoke;
@@ -39,7 +40,9 @@ button {
     font-size: 20px;
 
 }
+*/
 /*Margin between log in and top*/
+/*
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
@@ -50,7 +53,9 @@ img.avatar {
     width: 40%;
     border-radius: 100%;
 }
+*/
 /*container for log in*/
+/*
 .container {
     padding: 30px;
     font-family: 'Pontano Sans', sans-serif;
@@ -96,8 +101,10 @@ img.avatar {
 span.psw {
     padding-top: 16px;
 }
+*/
 
 /* Change styles for span and cancel button on extra small screens */
+/*
 @media screen and (max-width: 300px) {
     span.psw {
         display: block;
@@ -107,3 +114,161 @@ span.psw {
         width: 10%;
     }
 }
+*/
+/*------------------------------------Log In box ----------------------------------*/
+* {
+    text-align: center;
+    padding: 5px;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+input {
+    background-color: #333;
+    border:none;
+    border-radius: 2px;
+    text-align: left;
+    color:white;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #F07334;
+}
+
+.container {
+    font-family: sans-serif;
+    border: 2px solid #F07334;
+    width: 24%;
+    text-align: center;
+    margin: auto;
+    border-radius: 12px;
+    background-color: white;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 3px 0px 10px 0px black;
+    -moz-box-shadow: 3px 0px 10px 0px black;
+    box-shadow: 3px 0px 10px 0px black;
+}
+
+.submit {
+    background-color: transparent;
+    color:black;
+    border: 1px solid black;
+    width: 50%;
+    font-family: sans-serif;
+    font-size: 18px;
+    /*transition: 0.9s ease; */
+    text-align: center;
+}
+
+/*
+.submit:hover {
+    background-color: #F07334;
+    color:black;
+    border: 1px solid black;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+*/
+.password, .username {
+    width: 50%;
+}
+
+body {
+    background-color: #333;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+/*------------------------------------Nav header ----------------------------------*/
+
+
+/*Background in main*/
+#main {
+
+    padding:10px;
+    background-color: #111111;
+    min-height:100%;
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: lighter;
+
+
+}
+
+
+#nav-header {
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: lighter;
+    padding:0px;
+    background-color: #111;
+    background-image: url("https://www.scandichotels.se/imagevault/publishedmedia/suw58cmdyrxfvvjep2a5/Scandic-Malmen-Interior-bar-Lilla-hotellbaren-over.jpg");
+
+
+}
+
+.header-text{
+    text-align: center;
+    color: white;
+    position: static;
+}
+
+/*Space between menu and body*/
+#nav-main h1 {
+    font-size: 0%;
+
+}
+/*Menu buttons style*/
+
+#nav-main nav ul {
+    font-size: 30px;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: lighter;
+
+}
+/*Place of the menu*/
+#nav-main nav li {
+    float: left;
+}
+
+/* Menu background colour*/
+#nav-main nav li a {
+    display: block;
+    color: #111111;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 5px 50px;
+
+
+}
+
+
+/*When hovering over the menu*/
+#nav-main nav li a:hover:not(.active) {
+    background-color: #111;
+    color: whitesmoke;
+
+}
+
+
+/*When hovering over the active link*/
+#nav-main nav li a:hover {
+    background-color: #111;
+    color: whitesmoke;
+
+}
+
+#nav-main nav li a.active {
+    background-color: #111;
+    color: whitesmoke;
+
+}
+
