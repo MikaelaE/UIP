@@ -1,0 +1,46 @@
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+img {
+    padding: 1em;
+}
+
+.breaking {
+    clear: both;
+}
+
+
+#main h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+#firstSection {
+    margin: 0 0 10px 10px;
+    display:block;
+}
+
+#secondSection {
+    background-color: azure;
+    margin-bottom: 50px;
+}
+#img1 {
+    float: left;
+}
+
+#img2 {
+    float:right;
+}
+
+
+#startbox h1, .UsernameText{
+    text-align: center;
+    color:white;
+    font-size:38px;
+}

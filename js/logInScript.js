@@ -51,17 +51,18 @@ function printOutTheMenu(AllUsers) {
         *  usernames in the database that have null as username. */
         if((un == AllUsers[i].username) && AllUsers[i].username != checkNotNull)
         {
+            console.log("logInscript")
             valid = true;
-            /* Sett the user name to a global variable. So we can use the other functions to the database.
+            /* Sett the user name to a global variable. So we can use the other functions to the database. */
             localStorage.setItem("TempUser", un);
-            */
+            console.log(un);
             break;
         }
     }
     if (valid)
     {
         alert("Login was successful");
-        window.location = "loginSuccess.html";
+        window.location = "../Customer with account pages/loginSuccess.html";
         return false;
     }
     else
