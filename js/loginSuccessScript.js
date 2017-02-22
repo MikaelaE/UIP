@@ -21,9 +21,12 @@ function getTheUserDatabase() {
         dataType:'json',
         success:function (data) {
             WelcomeAndInformation(data.payload);
+            getTheUserName()
         }
     });
 }
+/*--------------------------------------Information about the user account data---------------------------------------*/
+
 
 /* The function finds the current user and attached it to the page. */
 function WelcomeAndInformation(AllUsers) {
@@ -49,9 +52,50 @@ function WelcomeAndInformation(AllUsers) {
     }
 }
 
-/*--------------------------------------Information button---------------------------------------*/
 // Get the modal
 var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it.
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+/*----------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------Information about user balance---------------------------------------*/
+
+/*Function that take the current username and send it forward to another function.*/
+function getTheUserName() {
+    var Username = localStorage.TempUser;
+    getTheUserPurchasesHistory(Username);
+}
+
+/*The function calls the database with the current username and get all purchase history from the user.*/
+function getTheUserPurchasesHistory(Username) {
+    var link = 'http://pub.jamaica-inn.net/fpdb/api.php?username='+Username+'&password='+Username+'&action=iou_get';
+    console.log(link);
+    $.ajax({
+        type:'GET',
+        url:link,
+        dataType:'json',
+        success:function (data) {
+            Information(data.payload);
+        }
+    });
+}
+
+/* The function attached the user purchase information to the page. */
+function Information(Balance) {
+    for(var i=0; i<Balance.length; i++)
+    {
+        $('#balanceSection2').append('<p>' + "Balance:" + Balance[i].assets +"$");
+    }
+}
+
+// Get the modal
+var modal = document.getElementById('id02');
 
 // When the user clicks anywhere outside of the modal, close it.
 window.onclick = function(event) {
