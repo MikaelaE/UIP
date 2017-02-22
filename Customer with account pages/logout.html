@@ -14,12 +14,6 @@
 </head>
 <body>
 
-
-<script>
-    docLoaded(indexPageLoaded);
-</script>
-
-
 <!-- Here begins the header section. -->
 <div id="nav-header">
     <div class="square2">
@@ -48,8 +42,8 @@ the user data is not longer available. -->
 <div id="LogOutAlternative">
     <div id="order">
         <h1>Are you sure you want log out?</h1>
-        <button onclick="EraseLocalUserData()" type="button" id="buttonYes"><a href="../index.html">YES</a></button>
-        <button type="button" id="buttonNo"><a href="loginSuccess.html">NO</a></button>
+        <button onclick="EraseLocalUserData()" type="button" id="buttonYes"><a>YES</a></button>
+        <button onclick="getTheUserDatabase()" type="button" id="buttonNo"><a>NO</a></button>
     </div>
 </div>
 
