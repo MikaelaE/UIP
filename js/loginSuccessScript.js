@@ -13,6 +13,7 @@ function indexPageLoaded() {
     getTheUserDatabase();
 }
 
+/* Calls the database and get all user in the system and send the data to another function. */
 function getTheUserDatabase() {
     $.ajax({
         type:'GET',
@@ -24,12 +25,15 @@ function getTheUserDatabase() {
     });
 }
 
+/* The function finds the current user and attached it to the page. */
 function WelcomeAndInformation(AllUsers) {
+
+    /* The username is stored in the local storage from the log in page.*/
     var Username = localStorage.TempUser;
-    //$("#startbox").append( '<span id="welcomeUser" class="UsernameText">"+Username+"</span>' )
 
     for(var i=0; i<AllUsers.length; i++)
     {
+        /* Find the right username and print out all information about the user. */
         if(Username == AllUsers[i].username)
         {
             $('#startbox').append('<h1 id="startbox">'+ "Welcome " + AllUsers[i].first_name + " "+
@@ -49,7 +53,7 @@ function WelcomeAndInformation(AllUsers) {
 // Get the modal
 var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside of the modal, close it.
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";

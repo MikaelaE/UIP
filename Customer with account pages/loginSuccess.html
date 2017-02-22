@@ -33,9 +33,9 @@
     <nav>
         <ul>
             <li><a  class="active" href="loginSuccess.html">MY PROFILE</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">History, TODO</a></li>
-            <li><a href="#">LOG OUT, TODO</a></li>
+            <li><a href="LogInMenu.html">MENU</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="logout.html">LOG OUT</a></li>
         </ul>
     </nav>
 
@@ -47,36 +47,33 @@
 </div>
 
 <div id="order">
-    <button type="button" id="buttonOrder"><a href="pages/menu.html">ORDER</a></button>
+    <button type="button" id="buttonOrder"><a href="LogInMenu.html">ORDER</a></button>
 </div>
 
+<!-- Section to the button that activate the pop up window. -->
 <div class="center">
 <button onclick="document.getElementById('id01').style.display='block'" style="text-align:center">Account information</button>
 </div>
 
+<!-- Section to the pop up window. -->
 <div id="id01" class="modal">
 
     <form class="modal-content animate">
 
         <div class="container">
+            <!-- Section where the information about the user is going to be attached. -->
             <div id="informationSection">
                 <h2>Your account information:</h2>
                 <div id="informationSection2"></div>
             </div>
         </div>
 
+        <!-- Section to the button that takes away the pop up window.. -->
         <div class="container">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Close</button>
         </div>
     </form>
 </div>
-
-<!--
-<div id="informationSection">
-   <h2>Your account information:</h2>
-    <div id="informationSection2"></div>
-</div>
--->
 
 </body>
 </html>
