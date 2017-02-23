@@ -52,16 +52,24 @@ function printOutTheMenu(AllUsers) {
         if((un == AllUsers[i].username) && AllUsers[i].username != checkNotNull)
         {
             valid = true;
-            /* Sett the user name to a global variable. So we can use the other functions to the database.
+            /* Sett the user name to a global variable. So we can use the other functions to the database. */
             localStorage.setItem("TempUser", un);
-            */
             break;
         }
     }
-    if (valid)
+    /* Checks if the user credentials is 3, in that case the user is a customer. */
+    if (valid && (AllUsers[i].credentials==3))
     {
         alert("Login was successful");
-        window.location = "loginSuccess.html";
+        window.location = "../Customer with account pages/loginSuccess.html";
+        return false;
+    }
+
+    /* Checks if the user credentials is 0, in that case the user is a admin. */
+    else if (valid && (AllUsers[i].credentials==0))
+    {
+        alert("Login was successful");
+        window.location = "../Admin pages/AdminLogIn.html";
         return false;
     }
     else

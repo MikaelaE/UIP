@@ -190,6 +190,7 @@ footer {
 a:link {
     text-decoration: none;
     margin: 0px;
+    color:black;
 }
 
 /* visited link */
