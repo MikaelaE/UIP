@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/menuStyle.css">
+
+    <script src="../pages/jquery-3.1.1.js"></script>
+    <script src="../pages/jquery-ui.js"></script>
+    <script src="../pages/menuScript.js"></script>
+
+    <title>Welcome to The Flying Dutchman</title>
+</head>
+<body>
+<!-- Here begins the header section. -->
+<div id="nav-header">
+    <div class="square2">
+        <h1 class="header-text">THE FLYING DUTCHMAN</h1>
+    </div>
+
+</div>
+
+<!-- Here begins the body section. -->
+<div id="nav-main">
+    <nav>
+        <ul>
+            <li><a  href="loginSuccess.html">MY PROFILE</a></li>
+            <li><a class="active" href="LogInMenu.html">MENU</a></li>
+            <li><a href="history.html">HISTORY</a></li>
+            <li><a href="logout.html">LOG OUT</a></li>
+        </ul>
+    </nav>
+
+</div>
+
+<!-- Here begins the body section. -->
+<div id="main">
+
+
+    <script>
+        docLoaded(indexPageLoaded);
+    </script>
+
+    <!-- The divs are to print out all the elements in the inventory database(the drinks) -->
+    <div id="parentDiv">
+        <div id="childDiv"></div>
+    </div>
+
+    <!-- The section for the droppable element-->
+    <div>
+        <div id="orderlistBox">
+            <div id="orderlistBoxText">
+                <h2>Orderlist</h2>
+                <p class="totalCost">Total: $0</p>
+                <p class="totalDrinks">Amount of drinks: 0</p>
+            </div>
+
+            <!-- The section for the buttons.-->
+            <div id="order">
+                <button type="button" id="buttonUndo"><a href="LogInMenu.html">UNDO</a></button>
+                <button type="button" id="buttonOrder"><a href="payment.html">ORDER</a></button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Clear the floats-->
+    <br class="breaking">
+
+</div>
+
+<!-- Here begins the footer section.-->
+<footer>
+    <p>Open from 6pm to 2am</p>
+</footer>
+</body>
+
+
+</html>
+
+

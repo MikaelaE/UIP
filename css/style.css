@@ -73,9 +73,6 @@ footer {
 #nav-main nav li {
     float: left;
     width: 20%;
-
-
-
 }
 
 /* Menu background colour*/
@@ -200,6 +197,7 @@ footer {
 a:link {
     text-decoration: none;
     margin: 0px;
+    color:black;
 }
 
 /* visited link */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loginSuccessStyle.css">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/AdminIndexScript.js"></script>
+    <title>Welcome to The Flying Dutchman</title>
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+</head>
+<body>
+
+
+<script>
+    docLoaded(indexPageLoaded);
+</script>
+
+
+<!-- Here begins the header section. -->
+<div id="nav-header">
+    <div class="square2">
+        <h1 class="header-text">THE FLYING DUTCHMAN</h1>
+    </div>
+
+</div>
+
+<!-- Here begins the body section. -->
+<div id="nav-main">
+    <nav>
+        <ul>
+            <li><a  class="active" href="AdminLogIn.html">MY PROFILE</a></li>
+            <li><a href="inventory.html">INVENTORY</a></li>
+            <li><a href="#">TODO</a></li>
+            <li><a href="AdminLogOut.html">LOG OUT</a></li>
+        </ul>
+    </nav>
+
+    <div class="image"></div>​
+
+</div>
+
+<!--The section where the welcome text is attached to. -->
+<div id="startbox">
+</div>
+
+<!------------------------------------ Admin information ----------------------------------------------->
+<!-- Section to the button that activate the pop up window. -->
+<div class="center">
+    <button onclick="document.getElementById('id01').style.display='block'" style="text-align:center">Account information</button>
+</div>
+
+<!-- Section to the pop up window. -->
+<div id="id01" class="modal">
+
+    <form class="modal-content animate">
+
+        <div class="container">
+            <!-- Section where the information about the user is going to be attached. -->
+            <div id="informationSection">
+                <h2>Your account information:</h2>
+                <div id="informationSection2"></div>
+            </div>
+        </div>
+
+        <!-- Section to the button that takes away the pop up window.. -->
+        <div class="container">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Close</button>
+        </div>
+    </form>
+</div>
+<!-------------------------------------------------------------------------------------------------------------->
+
+</body>
+</html>

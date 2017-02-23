@@ -1,0 +1,35 @@
+/*-------------------------- Buttons--------------------------------------*/
+body{
+    background-color: #333;
+    color:white;
+}
+#buttonYes{
+    background-color: floralwhite;
+    border: none;
+    color: #000;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: lighter;
+    -webkit-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+}
+
+#buttonNo{
+    background-color: floralwhite;
+    border: none;
+    color: #000;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: lighter;
+    -webkit-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+}
+/*--------------------------------------------------------------------*/
