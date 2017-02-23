@@ -37,8 +37,8 @@ footer {
     font-weight: lighter;
     padding:0px;
     background-color: #111;
-    background-image: url("https://www.scandichotels.se/imagevault/publishedmedia/suw58cmdyrxfvvjep2a5/Scandic-Malmen-Interior-bar-Lilla-hotellbaren-over.jpg");
 
+    background-image: url("https://www.scandichotels.se/imagevault/publishedmedia/suw58cmdyrxfvvjep2a5/Scandic-Malmen-Interior-bar-Lilla-hotellbaren-over.jpg");
 
 
 }
@@ -53,6 +53,12 @@ footer {
 #nav-main h1 {
     font-size: 0%;
 
+
+
+
+
+
+
 }
 /*Menu buttons style*/
 
@@ -66,13 +72,20 @@ footer {
     font-family: 'Pontano Sans', sans-serif;
     font-weight: lighter;
     width: 100%;
+
+
+
+
+
+
+
 }
-
-
 /*Place of the menu*/
 #nav-main nav li {
     float: left;
     width: 20%;
+
+
 }
 
 /* Menu background colour*/
@@ -113,10 +126,9 @@ footer {
 
 /*Welcome box on startpage*/
 .square{
-
     text-align:center;
     margin-top:150px;
-    color: whitesmoke;
+    color: white;
     background-color: rgba(0,0,0, 0.5);
     font-weight: lighter;
     font-size: 900%;
@@ -126,14 +138,12 @@ footer {
     vertical-align: middle;
 
 
-
 }
 /*Titlebox on all pages*/
 .square2{
-
     text-align:center;
     margin-top:0px;
-    color: whitesmoke;
+    color: white;
     background-color: rgba(0,0,0, 0.5);
     font-weight: lighter;
     font-size:200%;
@@ -168,10 +178,9 @@ footer {
 
 /*Enter button on startpage*/
 #buttonOrder {
-    background-color: whitesmoke;
+    background-color: floralwhite;
     border: none;
-    color: #111;
-	cursor:pointer;
+    color: #000;
     padding: 10px 80px;
     text-align: center;
     text-decoration: none;
@@ -182,14 +191,6 @@ footer {
     -webkit-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
-	-webkit-transition: background-color 1.5s, color 1.5s;
-	-moz-transition: background-color 1.5s, color 1.5s;
-	transition: background-color 1.5s;
-}
-
-#buttonOrder:hover{
-	background-color: #111;
-	color: whitesmoke;
 }
 
 
@@ -197,7 +198,6 @@ footer {
 a:link {
     text-decoration: none;
     margin: 0px;
-    color:black;
 }
 
 /* visited link */

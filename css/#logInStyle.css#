@@ -1,0 +1,109 @@
+/* Only for this file */ form {
+
+}
+
+/*Log in boxes size*/
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 3% 2%;
+    margin: 5% 0;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 100%;
+
+}
+
+/*Login button*/
+button {
+    background-color: #111;
+    color: whitesmoke;
+    padding: 3% 10%;
+    margin: 2% 0;
+    margin-top: 0%;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    width: 40%;
+    font-size: 150%;
+
+}
+/*Cancel button*/
+.cancelbtn {
+    background-color: #111;
+    color: whitesmoke;
+    padding: 3% 10%;
+    margin: 2% 0;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    width: 40%;
+    font-size: 150%;
+
+}
+/*Margin between log in and top*/
+.imgcontainer {
+    text-align: center;
+    margin: 1% 0 1% 0;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 100%;
+}
+/*container for log in*/
+.container {
+    font-family: 'Pontano Sans', sans-serif;
+    color: whitesmoke;
+    font-size: 200%;
+    align-content: center;
+    font-family: 'Pontano Sans', sans-serif;
+    padding: 8%;
+
+
+
+}
+
+
+
+.container2 {
+
+    font-family: 'Pontano Sans', sans-serif;
+    color: whitesmoke;
+    font-size: 100%;
+    align-content: center;
+    font-family: 'Pontano Sans', sans-serif;  
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+
+.psw{
+    padding: 10%;
+    font-family: 'Pontano Sans', sans-serif;
+    color: whitesmoke;
+    font-size: 200%;
+    justify-content-content: center;
+    font-family: 'Pontano Sans', sans-serif;
+    margin-left: 20%;
+
+
+}
+
+
+
+span.psw {
+    padding-top: 16%;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 10%;
+    }
+}
