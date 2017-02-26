@@ -116,7 +116,7 @@ span.psw {
 }
 */
 /*------------------------------------Log In box ----------------------------------*/
-* {
+/** {
     text-align: center;
     padding: 5px;
 }
@@ -125,44 +125,64 @@ li {
     list-style-type: none;
     text-align: center;
     padding-bottom: 5%;
-}
+}*/
 
+/*
 input {
     background-color: #333;
     border:none;
     border-radius: 2px;
     text-align: left;
     color:white;
-}
+}*/
 
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 3% 2%;
+    margin: 5% 0;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 100%;
+
+}
+/*
 h1 {
     font-family: sans-serif;
     color: #F07334;
-}
+}*/
+
+
 
 .container {
-    font-family: sans-serif;
-    border: 2px solid #F07334;
-    width: 24%;
+    font-family: 'Pontano Sans', sans-serif;
+    width: 40%;
     text-align: center;
     margin: auto;
     border-radius: 12px;
-    background-color: white;
-    padding-bottom: 10px;
-    -webkit-box-shadow: 3px 0px 10px 0px black;
-    -moz-box-shadow: 3px 0px 10px 0px black;
-    box-shadow: 3px 0px 10px 0px black;
+    color: whitesmoke;
+    font-size: 200%;
+    align-content: center;
+    padding-top: 1%;
+
 }
 
+
 .submit {
-    background-color: transparent;
-    color:black;
-    border: 1px solid black;
+    background-color:#111;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
     width: 50%;
-    font-family: sans-serif;
-    font-size: 18px;
+    font-family:'Pontano Sans', sans-serif;
+    font-size: 25px;
+    padding:2%;
     /*transition: 0.9s ease; */
     text-align: center;
+    margin: auto;
+    -webkit-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
 }
 
 /*
@@ -178,97 +198,26 @@ h1 {
     width: 50%;
 }
 
-body {
-    background-color: #333;
-}
+@media (max-width: 800px) {
 
-/*-------------------------------------------------------------------------------------------*/
+    input[type=text], input[type=password] {
+        padding: 1% 0%;
+        width: 100%;
+        margin: 2% -10%;
 
-/*------------------------------------Nav header ----------------------------------*/
+    }
 
+    .container {
+        width: 70%;
 
-/*Background in main*/
-#main {
+    }
 
-    padding:10px;
-    background-color: #111111;
-    min-height:100%;
-    font-family: 'Pontano Sans', sans-serif;
-    font-weight: lighter;
+    .submit {
+        margin-right: -5% ;
+    }
 
-
-}
-
-
-#nav-header {
-    font-family: 'Pontano Sans', sans-serif;
-    font-weight: lighter;
-    padding:0px;
-    background-color: #111;
-    background-image: url("https://www.scandichotels.se/imagevault/publishedmedia/suw58cmdyrxfvvjep2a5/Scandic-Malmen-Interior-bar-Lilla-hotellbaren-over.jpg");
 
 
 }
 
-.header-text{
-    text-align: center;
-    color: white;
-    position: static;
-}
-
-/*Space between menu and body*/
-#nav-main h1 {
-    font-size: 0%;
-
-}
-/*Menu buttons style*/
-
-#nav-main nav ul {
-    font-size: 30px;
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Pontano Sans', sans-serif;
-    font-weight: lighter;
-
-}
-/*Place of the menu*/
-#nav-main nav li {
-    float: left;
-}
-
-/* Menu background colour*/
-#nav-main nav li a {
-    display: block;
-    color: #111111;
-    background-color: whitesmoke;
-    text-align: center;
-    padding: 5px 50px;
-
-
-}
-
-
-/*When hovering over the menu*/
-#nav-main nav li a:hover:not(.active) {
-    background-color: #111;
-    color: whitesmoke;
-
-}
-
-
-/*When hovering over the active link*/
-#nav-main nav li a:hover {
-    background-color: #111;
-    color: whitesmoke;
-
-}
-
-#nav-main nav li a.active {
-    background-color: #111;
-    color: whitesmoke;
-
-}
 

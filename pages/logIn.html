@@ -1,11 +1,16 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:cursor="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link rel="stylesheet" href="../css/style.css">
+<!--Updated upstream-->
+
+    <!-- <link rel="stylesheet" href="../css/logInStyle2.css">-->
+<!--Stashed changes-->
     <link rel="stylesheet" href="../css/logInStyle.css">
+    <link rel="stylesheet" href="../css/style.css">
+
 
     <script src="../js/jquery.js"></script>
     <script src="../js/logInScript.js"></script>
@@ -34,7 +39,7 @@
         <ul>
             <li><a href="../index.html">START</a></li>
             <li><a href="menu.html">MENU</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="about2.html">ABOUT</a></li>
             <li><a href="events.html">EVENTS</a></li>
             <li><a class="active" href="logIn.html">LOG IN</a></li>
         </ul>
@@ -46,13 +51,13 @@
         <!--Maybe some texts here? -->
     </div>
 
-    <form name="login" method="post">
-        <ul>
+    <form name="login" method="post" >
+        <ul style="list-style-type:none">
             <li>Username: <input class="username" type="text" name="username"></li>
             <li>Password: <input class="password" type="password" name="password"></li>
         </ul>
 
-        <input type="button" class="submit" value="Log In" name="submit" onclick="validate()">
+        <input type=button" class="submit" value="LOG IN" name="submit" onclick="validate()">
     </form>
 </div>
 
