@@ -313,7 +313,7 @@ li {
         padding: 1% 2%;
         position:fixed;
         right:2%;
-        top:90%;
+        top:68%;
         font-size: 120%;
 
     }
@@ -322,7 +322,7 @@ li {
         padding: 1% 2%;
         position:fixed;
         right:18%;
-        top:90%;
+        top:68%;
         font-size: 120%;
 
     }
@@ -330,7 +330,7 @@ li {
 
     #orderlistBox{
         height: 35%;
-        top: 52.5%;
+        top: 30.5%;
 
     }
 
@@ -346,6 +346,34 @@ li {
 
 }
 
+@media (max-width: 500px) {
+
+    #orderlistBox{
+        height: 35%;
+        top: 45.5%;
+
+    }
+
+    #buttonUndo {
+
+        padding: 1% 1%;
+        position:fixed;
+        right:2%;
+        top:83%;
+        font-size: 90%;
+
+    }
+
+    #buttonOrder2{
+        padding: 1% 1%;
+        position:fixed;
+        right:18%;
+        top:83%;
+        font-size: 90%;
+
+    }
+
+}
 
 @media only screen
 and (min-device-width : 768px)
