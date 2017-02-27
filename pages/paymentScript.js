@@ -29,4 +29,21 @@ function printOutTheTotalCost() {
         $('#drinksNames').prepend('<p> '+ storedNames[i]);
     }
 
+    var servedDrinks = JSON.parse(localStorage.getItem("servedDrinksArray"));
+    var div = document.createElement('div');
+    var dn = document.getElementById("drinksNames");
+    $('#drinksNames').append('<h1>Ready to be fetched:</h1>');
+    for(i=0; i<servedDrinks.length; i++)
+        {
+                div.appendChild(document.createTextNode(servedDrinks[i] + " ✔"));
+                div.appendChild(document.createElement('br'));    
+       }
+      //location.reload(false);
+      div.style.color = "green";
+      dn.appendChild(div);
 }
+
+ function AutoRefresh( t ) {
+
+               setTimeout("location.reload(true);", t);
+            }
