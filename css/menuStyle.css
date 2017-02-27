@@ -20,9 +20,9 @@ html,body
     font-size: 200%;
     font-family: 'Pontano Sans', sans-serif;
     font-weight: lighter;
-    -webkit-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 
     position:fixed;
     right:2%;
@@ -40,18 +40,18 @@ html,body
     font-size: 200%;
     font-family: 'Pontano Sans', sans-serif;
     font-weight: lighter;
-    -webkit-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 13px 39px 0px rgba(0,0,0,0.75);
+    webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 
     position:fixed;
     right:17%;
     top:92%;
 
 }
-
+/*
 #regretOrderButton {
-    background-color: #111; /* Green */
+    background-color: #111; /* Green
     font-family: 'Pontano Sans', sans-serif;
     border: none;
     color: blue;
@@ -69,7 +69,7 @@ html,body
 }
 
 #buttonPurchase {
-    background-color: whitesmoke; /* Green */
+    background-color: whitesmoke; /* Green
     font-family: 'Pontano Sans', sans-serif;
     border: none;
     color: blue;
@@ -137,9 +137,9 @@ li {
     font-size: 20%;
     display:inline-block;
     line-height: 20px;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 }
 
 /* Tar float så att man får den dynamiska listan efter varandra och sätter en border runt.*/
@@ -167,6 +167,9 @@ li {
     font-size: 100%;
     /* Inline-block so dynamically divs are coming after each other. */
     display:inline-block;
+    webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
 }
 
 /*--------------------------------------------------------------------*/
@@ -192,7 +195,7 @@ li {
     width: 20px;
     height: 250px;
     padding: 10px;
-    border: 1px solid #aaaaaa;
+    border: 1px solid whitesmoke;
     text-align: center;
     font-family: 'Pontano Sans', sans-serif;
 }
@@ -211,6 +214,9 @@ li {
     position:fixed;
     right: 1%;
     top: 39%;
+    -webkit-box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.75);
+    box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.75);
 
 }
 
