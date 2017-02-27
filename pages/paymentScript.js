@@ -38,12 +38,28 @@ function printOutTheTotalCost() {
                 div.appendChild(document.createTextNode(servedDrinks[i] + " ✔"));
                 div.appendChild(document.createElement('br'));    
        }
-      //location.reload(false);
+
       div.style.color = "green";
       dn.appendChild(div);
+
+      refreshWhileNotReady();//keeps refreshing page till all drinks are served
 }
 
- function AutoRefresh( t ) {
+function AutoRefresh( t ) {
 
                setTimeout("location.reload(true);", t);
-            }
+}
+
+function refreshWhileNotReady(){
+    var servedDrinks = JSON.parse(localStorage.getItem("servedDrinksArray"));
+    var storedNames = JSON.parse(localStorage.getItem("drinksArray"));
+
+    if(servedDrinks.length==storedNames.length ){//when nr of selected drinks == nr served drinks
+        clearTimeout( setTimeout("location.reload(true);",6000));
+        //change color to green and text
+        document.getElementById('readyBox').children[0].innerHTML="Your Order is ready!";
+        document.getElementById('readyBox').style.background = 'green';
+    }
+    else
+        AutoRefresh(6000);
+}
