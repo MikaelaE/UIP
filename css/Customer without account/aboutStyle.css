@@ -1,0 +1,49 @@
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    background-color: #333; /* Modern Browsers */
+}
+
+.box {
+    margin-top:40px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.aboutimage {
+    height: 300px;
+    width: 450px;
+    float: left;
+    margin-right: 20px;
+
+}
+
+.aboutimage2 {
+    height: 300px;
+    width: 450px;
+    float: right;
+    margin-right: 20px;
+
+}
+
+.abouttext {
+
+    clear: right;
+    color:#ffffff;
+    font-family: 'Pontano Sans', sans-serif;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.abouttext2 {
+
+    clear: left;
+    color:#ffffff;
+    font-family: 'Pontano Sans', sans-serif;
+    margin-right: 480px;
+    font-size: 20px;
+    text-align: justify;
+}

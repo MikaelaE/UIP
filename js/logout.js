@@ -9,7 +9,7 @@
 * the the buttons redirection to another page depends if the user is a admin or a customer.
 * */
 function indexPageLoaded() {
-    getTheUserDatabase();
+    language();
 }
 
 /* Calls the database and get all user in the system and send the data to another function. */
@@ -50,13 +50,13 @@ function GoBackToUserIndexPage(CredentialsNumber) {
     /* Admin has credentials 0. */
     if(CredentialsNumber==0)
     {
-        window.location = "../Admin pages/AdminLogIn.html";
+        window.location = "../../html/Admin pages/AdminLogIn.html";
     }
 
     /* Customer has credentials 3. */
     else if(CredentialsNumber ==3)
     {
-        window.location = "../Customer with account pages/LoginSuccess.html";
+        window.location = "../../html/Customer with account pages/LoginSuccess.html";
     }
 }
 /*--------------------------------------------------------------------------------------------------------*/
@@ -69,7 +69,7 @@ exist any more when the user log out.
 function EraseLocalUserData() {
     localStorage.clear();
     alert("You have now log out!");
-    window.location = "../index.html";
+    window.location = "../../index.html";
 }
 
 /*--------------------------------------------------------------------------------------------------------*/

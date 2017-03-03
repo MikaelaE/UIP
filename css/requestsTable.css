@@ -2,7 +2,7 @@ input[type="checkbox"].checkb + label {
     color: #800000; 
     font-style: italic;
     font-family: Serif;
-    font-size: 1.3em;
+    font-size: 21px;
     font-weight: bold;
 }
 
@@ -10,7 +10,7 @@ input[type="checkbox"].checkb:checked + label {
     color: #006622;
      font-style: italic;
     font-family: Serif;
-    font-size: 1.3em;
+    font-size: 21px;
     font-weight: bold;
 }
 #main {
@@ -26,10 +26,10 @@ html, body {
 }
 
 .box {
-    height: 20em;
-    width: 25em;
-    margin: 2em;
-    margin-bottom: 25em;
+    height: 300px;
+    width: 350px;
+    margin: 25px;
+    margin-bottom: 290px;
     position: relative;
     float: left;
 }
@@ -63,7 +63,7 @@ html, body {
     text-align: center;
     font-style: italic;
     font-family: Serif;
-    font-size: 2em;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -74,14 +74,14 @@ html, body {
     border-radius: 50px;
     border: none;
     color: white;
-    padding: 0.3em 0.8em;
+    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.8em;
-    height:3.5em;
-    width:8em;
-    margin:0.2em;
+    font-size: 21px;
+    height:70px;
+    width:190px;
+    margin:3px;
 
 }
 

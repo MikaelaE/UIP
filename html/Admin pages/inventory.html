@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link rel="stylesheet" href="../../css/LoggedInStyle.css">
+    <link rel="stylesheet" href="../../css/inventoryStyle.css">
+
+    <script src="../../js/For%20all%20pages%20JS/jquery-3.1.1.js"></script>
+    <script src="../../js/For%20all%20pages%20JS/switchLanguages.js"></script>
+    <script src="../../js/AdminJS/inventoryScript.js"></script>
+
+    <title>Welcome to The Flying Dutchman</title>
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+</head>
+<body>
+
+<script>
+    docLoaded(indexPageLoaded);
+</script>
+
+
+<!-- Here begins the header section. -->
+<div id="nav-header">
+
+    <!--Buttons to switch languages -->
+    <div style="background-color: transparent">
+        <input type="image" src="../../img/swedishFlag.png" name="swedishFlag" class="translate" id="sv" height="35px"; width="50px";/>
+        <input type="image" src="../../img/englishFlag.JPG" name="englishFlag" class="translate" id="en" height="35px"; width="50px";/>
+    </div>
+
+    <div class="square2">
+        <h1 class="header-text">THE FLYING DUTCHMAN</h1>
+    </div>
+
+</div>
+
+<!-- Here begins the body section. -->
+<div id="nav-main">
+    <nav>
+        <ul>
+            <li><a  class="lang" key="MyProfile" href="AdminLogIn.html">MY PROFILE</a></li>
+            <li><a href="inventory.html" class="active lang" key="inventory">INVENTORY</a></li>
+            <li><a href="requests.html">BARTENDER</a></li>
+            <li><a href="Adminlogout.html" class="lang" key="logOut">LOG OUT</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="image"></div>​
+
+<div class="title">
+    <h1 class="lang" key="inventoryTitle"> The Inventory</h1>
+    <hr>
+</div>
+
+<!----------------------------------------Sections for the buttons---------------------------------->
+<div id="sectionInventory">
+
+    <div class="sections">
+        <h1 class="lang" key="wellStocked">Well-Stocked</h1>
+        <input type="button" id="showWell-Stocked" class="buttonsStyle" value="Show Data" style="background-color: green">
+        <input type="button" id="hideWell-Stocked" class="buttonsStyle" value="Hide Data" style="background-color: green">
+    </div>
+
+    <div class="sections">
+        <h1 class="lang" key="few">Few items left</h1>
+        <input type="button" id="showFew" class="buttonsStyle" value="Show Data" style="background-color: yellow">
+        <input type="button" id="hideFew" class="buttonsStyle" value="Hide Data" style="background-color: yellow">
+    </div>
+
+    <div class="sections">
+        <h1 class="lang" key="empty">Empty</h1>
+        <input type="button" id="showEmpty" class="buttonsStyle" value="Show Data" style="background-color: red">
+        <input type="button" id="hideEmpty" class="buttonsStyle" value="Hide Data" style="background-color: red">
+    </div>
+
+    <div class="sections">
+        <h1 class="lang" key="all">Show all</h1>
+        <input type="button" id="showAll" class="buttonsStyle" value="Show Data">
+        <input type="button" id="hideAll" class="buttonsStyle" value="Hide Data">
+    </div>
+</div>
+
+<!-- The class "sections" has float so need to clear before continue.-->
+<div class="clear"></div>
+<!--------------------------------------------------------------------------------------------------->
+
+
+<!-- This section is where the lager data is going to be attached.-->
+<div>
+    <div id="dataWell-Stocked">
+        <div id="wellStockedSection"> </div>
+    </div>
+    <div id="dataFew">
+        <div id="fewSection"> </div>
+    </div>
+
+    <div id="dataEmpty">
+        <div id="emptySection"> </div>
+    </div>
+    <div id="dataAll">
+        <div id="allSection"> </div>
+    </div>
+</div>
+
+<div class="clear"></div>
+
+<!--------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------Section to order------------------------------------------->
+
+<div class="title">
+    <h1 class="lang" key="orderToInventory">Order to the inventory</h1>
+    <hr>
+</div>
+
+<div id="orderSection">
+    <form name="order" method="post">
+
+        <label for="FormTextName" class="lang" key="name">Name:</label>
+        <input class="FormText" id="FormTextName" type="text" name="name">
+
+        <label for="FormTextBeerID" class="lang" key="drinkID">Drink ID:</label>
+        <input class="FormText" id="FormTextBeerID" type="text" name="beer_id">
+
+        <label for="FormTextAmount" class="lang" key="amount">Amount:</label>
+        <input class="FormText" id="FormTextAmount" type="text" name="amount">
+
+        <label for="FormTextPrice" class="lang" key="price">Price:</label>
+        <input class="FormText" id="FormTextPrice" type="text" name="price">
+    </form>
+
+    <input type="button" class="submit" id="sendOrderButton" value="Send Order" name="submit" onclick="sendOrder()">
+</div>
+
+<div class="clear"></div>
+<!--------------------------------------------------------------------------------------------------->
+
+
+</body>
+</html>
