@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link rel="stylesheet" href="../../css/Customer%20without%20account/aboutStyle.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="../../js/For%20all%20pages%20JS/jquery-3.1.1.js"></script>
+    <script src="../../js/For%20all%20pages%20JS/switchLanguages.js"></script>
+
+    <title>Welcome to The Flying Dutchman</title>
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+</head>
+<body>
+
+<script>
+    docLoaded(indexPageLoaded);
+</script>
+
+<!-- Here begins the header section. -->
+<div id="nav-header">
+
+    <!--Buttons to switch languages -->
+    <div style="background-color: transparent">
+        <input type="image" src="../../img/swedishFlag.png" name="swedishFlag" class="translate" id="sv" height="35px"; width="50px";/>
+        <input type="image" src="../../img/englishFlag.JPG" name="englishFlag" class="translate" id="en" height="35px"; width="50px";/>
+    </div>
+
+    <div class="square2">
+        <h1 class="header-text">THE FLYING DUTCHMAN</h1>
+    </div>
+
+</div>
+
+<!-- Here begins the body section. -->
+<div id="nav-main">
+    <nav>
+        <ul>
+            <li><a href="../../index.html"  class="lang" key="start" >START</a></li>
+            <li><a class="lang" href="menu.html" key="menu" >MENU</a></li>
+            <li><a href="about.html"  class=" active lang" key="about" >ABOUT</a></li>
+            <li><a href="events.html" class="lang" key="events" >EVENTS</a></li>
+            <li><a href="logIn.html" class="lang" key="logIn" >LOG IN</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="box">
+    <img class="aboutimage" src="https://meetthepeeps.files.wordpress.com/2016/03/screen-shot-2016-03-01-at-8-25-12-pm.png">
+
+    <!-- To change text you need go to the file switchLanguages.js, and in to var = arrLang, and section aboutPage.
+    key firstSectionText-->
+    <div class="abouttext lang" key="firstSectionText">
+    </div>
+
+    <img class="aboutimage2" src="https://media.timeout.com/images/102639869/image.jpg">
+
+
+    <!-- To change text you need go to the file switchLanguages.js, and in to var = arrLang, and section aboutPage.
+    key secondSectionText-->
+    <div class="abouttext2 lang" key="secondSectionText">
+    </div>
+</div>
+
+
+</body>
+</html>

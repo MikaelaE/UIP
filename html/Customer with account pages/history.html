@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link rel="stylesheet" href="../../css/LoggedInStyle.css">
+    <link rel="stylesheet" href="../../css/loginSuccessStyle.css">
+    <link rel="stylesheet" href="../../css/historyStyle.css">
+
+    <script src="../../js/For%20all%20pages%20JS/jquery-3.1.1.js"></script>
+    <script src="../../js/For%20all%20pages%20JS/switchLanguages.js"></script>
+    <script src="../../js/Customer%20with%20account%20JS/historyScript.js"></script>
+
+    <title>Welcome to The Flying Dutchman</title>
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+</head>
+<body>
+
+
+<script>
+    docLoaded(indexPageLoaded);
+</script>
+
+<!-- Here begins the header section. -->
+<div id="nav-header">
+
+    <!--Buttons to switch languages -->
+    <div style="background-color: transparent">
+        <input type="image" src="../../img/swedishFlag.png" name="swedishFlag" class="translate" id="sv" height="35px"; width="50px";/>
+        <input type="image" src="../../img/englishFlag.JPG" name="englishFlag" class="translate" id="en" height="35px"; width="50px";/>
+    </div>
+
+    <div class="square2">
+        <h1 class="header-text">THE FLYING DUTCHMAN</h1>
+    </div>
+
+</div>
+
+<!-- Here begins the body section. -->
+<div id="nav-main">
+    <nav>
+        <ul>
+            <li><a class="lang" href="loginSuccess.html" key="MyProfile">MY PROFILE</a></li>
+            <li><a href="LogInMenu.html" class="lang" key="menu">MENU</a></li>
+            <li><a href="history.html" class="active lang" key="history">HISTORY</a></li>
+            <li><a href="logout.html" class="lang" key="logOut" >LOG OUT</a></li>
+        </ul>
+    </nav>
+
+    <div class="image"></div>​
+
+</div>
+
+<!-- The section where all the information about the users purchases is going to be attached. -->
+<div id="informationSection">
+   <h2 class="lang" key="allPurchases"> List of all your purchases:</h2>
+    <div id="informationSection2"></div>
+</div>
+
+
+</body>
+</html>

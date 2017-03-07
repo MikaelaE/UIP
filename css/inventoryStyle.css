@@ -1,0 +1,171 @@
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color:  #333;
+}
+/* A simple line.*/
+hr {
+    color:white;
+    width:50%;
+    border-style:solid;
+}
+
+#sectionInventory{
+    background-color:#333;
+    color:white;
+}
+
+.dynamicallyParagraphClass{
+    float:left;
+    color:white;
+    border:lightgrey dashed 1px;
+    margin:10px;
+    padding:5px;
+   /* border:solid black 2px; */
+}
+
+.sections{
+    height: 80%;
+    width: 15%;
+    text-align: center;
+    float:left;
+    margin:3%;
+    margin-top:0px;
+    /*padding: 16px 45px 16px 45px; */
+    color:white;
+}
+
+.title{
+    font-size: 28px;
+    text-align: center;
+    margin:10px;
+    padding:0px;
+    color:white;
+}
+
+.title h1{
+    margin-bottom: 0px;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.clear{
+    clear:both;
+}
+
+/*------------------------------Hide/show buttons---------------------------------------------*/
+/* From https://www.youtube.com/watch?v=tFSsKSQB-CI&t=393s */
+
+.buttonsStyle {
+    padding: 16px 45px 16px 45px;
+    color:black;
+    font-size:25px;
+}
+
+#show {
+    display:block;
+}
+
+#dataWell-Stocked, #hideWell-Stocked, #dataFew, #hideFew, #dataEmpty, #hideEmpty, #dataAll, #hideAll {
+    display:none;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+/*------------------------------Order section---------------------------------------------*/
+#orderSection{
+    height: 30%;
+    margin:auto;
+    width: 50%;
+    text-align: center;
+    font-size: 28px;
+}
+
+#form1{
+    color:black;
+    background-color: white;
+    text-align: center;
+    font-size: 28px;
+}
+/*------------------------------------Log In box ----------------------------------*/
+
+label {
+    width:150px;
+    clear:left;
+    text-align:center;
+    padding-right:10px;
+    padding-top: 8px;
+    font-size: 24px;
+}
+
+.FormTextName, label {
+    float:left;
+}
+
+/*
+* {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+    padding-bottom: 5%;
+}
+*/
+
+.FormText {
+    background-color: #333;
+    border:none;
+    margin:2px;
+    border-radius: 2px;
+    text-align: left;
+    color:white;
+    height: 24px;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: white;
+}
+
+#orderSection {
+    font-family: sans-serif;
+    border: 2px solid black;
+    width: 44%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    border-radius: 12px;
+    background-color: white;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 3px 0px 10px 0px black;
+    -moz-box-shadow: 3px 0px 10px 0px black;
+    box-shadow: 3px 0px 10px 0px black;
+}
+
+.submit {
+    margin-top: 20px;
+    background-color: lightgrey;
+    color:black;
+    border: 1px solid black;
+    width: 50%;
+    font-family: sans-serif;
+    font-size: 28px;
+    /*transition: 0.9s ease; */
+    text-align: center;
+}
+
+
+.FormText{
+    width: 50%;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+

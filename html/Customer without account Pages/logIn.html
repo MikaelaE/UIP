@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:cursor="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+<!--Updated upstream-->
+
+    <!-- <link rel="stylesheet" href="../css/logInStyle2.css">-->
+<!--Stashed changes-->
+    <link rel="stylesheet" href="../../css/logInStyle.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="../../js/For%20all%20pages%20JS/jquery-3.1.1.js"></script>
+    <script src="../../js/For%20all%20pages%20JS/switchLanguages.js"></script>
+    <script src="../../js/Customer%20without%20accout%20JS/logInScript.js"></script>
+    <script src="../../js/For%20all%20pages%20JS/md5.js"></script>
+
+    <title>Welcome to The Flying Dutchman</title>
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+</head>
+<body>
+
+<script>
+    docLoaded(indexPageLoaded);
+</script>
+
+<!-- Here begins the header section. -->
+
+<!--Buttons to switch languages -->
+<div id="nav-header">
+
+    <!--Buttons to switch languages -->
+    <div style="background-color: transparent">
+        <input type="image" src="../../img/swedishFlag.png" name="swedishFlag" class="translate" id="sv" height="35px"; width="50px";/>
+        <input type="image" src="../../img/englishFlag.JPG" name="englishFlag" class="translate" id="en" height="35px"; width="50px";/>
+    </div>
+
+    <div class="square2">
+        <h1 class="header-text">THE FLYING DUTCHMAN</h1>
+    </div>
+
+</div>
+
+<!-- Here begins the body section. -->
+<div id="nav-main">
+    <nav>
+        <ul>
+            <li><a href="../../index.html"  class="lang" key="start" >START</a></li>
+            <li><a class="lang" href="menu.html" key="menu" >MENU</a></li>
+            <li><a href="about.html" class="lang" key="about" >ABOUT</a></li>
+            <li><a href="events.html" class="lang" key="events" >EVENTS</a></li>
+            <li><a href="logIn.html"  class="active lang" key="logIn" >LOG IN</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container">
+    <div class="header">
+        <!--Maybe some texts here? -->
+    </div>
+
+    <form name="login" method="post" >
+        <ul style="list-style-type:none">
+            <li class="lang" key="username">Username:</li><input class="username" type="text" name="username">
+            <li class="lang" key="password">Password:</li><input class="password" type="password" name="password">
+        </ul>
+        <input type=button" class="submit" id="btnLogIn" value="LOG IN" name="submit" onclick="validate()">
+    </form>
+</div>
+
+
+</body>
+</html>
